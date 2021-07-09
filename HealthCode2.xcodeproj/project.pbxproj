@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B4BCFF62698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
+		5B4BCFF72698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
+		5B4BCFF82698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
 		5BC218292698A4C3002F8AA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC218282698A4C3002F8AA8 /* AppDelegate.swift */; };
 		5BC2182B2698A4C3002F8AA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2182A2698A4C3002F8AA8 /* SceneDelegate.swift */; };
 		5BC2182D2698A4C3002F8AA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2182C2698A4C3002F8AA8 /* ViewController.swift */; };
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B4BCFF52698A7810000DC36 /* NYTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTAPI.swift; sourceTree = "<group>"; };
 		5BC218252698A4C3002F8AA8 /* HealthCode2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthCode2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC218282698A4C3002F8AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC2182A2698A4C3002F8AA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				5BC218282698A4C3002F8AA8 /* AppDelegate.swift */,
 				5BC2182A2698A4C3002F8AA8 /* SceneDelegate.swift */,
 				5BC2182C2698A4C3002F8AA8 /* ViewController.swift */,
+				5B4BCFF52698A7810000DC36 /* NYTAPI.swift */,
 				5BC2182E2698A4C3002F8AA8 /* Main.storyboard */,
 				5BC218312698A4C7002F8AA8 /* Assets.xcassets */,
 				5BC218332698A4C7002F8AA8 /* LaunchScreen.storyboard */,
@@ -149,7 +154,6 @@
 				C9353C048B0DAE34CC8F8669 /* Pods-HealthCode2.debug.xcconfig */,
 				E4EEFF35E9BF81938B392BB7 /* Pods-HealthCode2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +313,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4BCFF62698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC2182D2698A4C3002F8AA8 /* ViewController.swift in Sources */,
 				5BC218292698A4C3002F8AA8 /* AppDelegate.swift in Sources */,
 				5BC2182B2698A4C3002F8AA8 /* SceneDelegate.swift in Sources */,
@@ -319,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4BCFF72698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC218402698A4C7002F8AA8 /* HealthCode2Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B4BCFF82698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC2184B2698A4C7002F8AA8 /* HealthCode2UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
