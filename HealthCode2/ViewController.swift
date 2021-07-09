@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         
         let api = NYTAPI()
         api.getBase()
-    }
-
-
+        
+        }        
 }
+
 

@@ -17,39 +17,24 @@ class NYTAPI {
         AF.request(endpoint).responseJSON { response in
             
             switch response.result {
-                    case .success(let value):
-                        print("OK")
-                        
-                        if let json = value as? [[String: Any]] {
-                            
-                            print(json[0]["Result"] as? Int)
+
+                case .success(let value):
+                    if let dictionary = value as? [AnyHashable: Any] {
+                        print("Successful dict")
+                        print(dictionary["copyright"] as! String)
+
+                        if let results = dictionary["results"] as? [[String:Any]]{
+
+                            //Now we have array of dictionaries
                         }
-                    case .failure(let error):
-                        print("fail")
                     }
-      }
-        
-
-    }
-    
-}
-
-
-// does the info in this class go within the NYTAPI
-/*
-class Servive {
-    fileprivate var baseUrl = ""
-    
-    init(baseUrl: String) {
-        self.baseUrl = baseUrl
-    }
-    
-    func getHealthArticlesFrom(endPoint:String) {
-        AF.request(self.baseUrl + endPoint, method: .get, parameters: nil, encoding: URLEncoding.default, headers: nil, interceptor: nil).response {
-            (responseData) in
-            print("We got the response")
+                    else{
+                        print("Data conversion error")
+                    }
+                case .failure(let error):
+                        print(error)
+            }
         }
     }
- }
-*/
+}
 
