@@ -13,7 +13,7 @@ class NYTAPI {
     
     // get other endpoints from NYT
     
-    func getBase(){
+    func getBase() {
         AF.request(endpoint).responseJSON { response in
             
             switch response.result {
@@ -26,6 +26,9 @@ class NYTAPI {
                         if let results = dictionary["results"] as? [[String:Any]]{
 
                             //Now we have array of dictionaries
+                            // accessing array index 0 and dictionary key "short_url"
+                            // upwrapping Optional with !
+      //                      var temp = (results[0]["short_url"]!)
                         }
                     }
                     else{
