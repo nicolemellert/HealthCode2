@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3E4C2C269C82DA0015F922 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C2B269C82DA0015F922 /* TableViewCell.swift */; };
+		5B3E4C2D269C82DA0015F922 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C2B269C82DA0015F922 /* TableViewCell.swift */; };
+		5B3E4C2E269C82DA0015F922 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C2B269C82DA0015F922 /* TableViewCell.swift */; };
+		5B3E4C34269CC0A70015F922 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C33269CC0A70015F922 /* DetailViewController.swift */; };
+		5B3E4C35269CC0A70015F922 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C33269CC0A70015F922 /* DetailViewController.swift */; };
+		5B3E4C36269CC0A70015F922 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3E4C33269CC0A70015F922 /* DetailViewController.swift */; };
 		5B4BCFF62698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
 		5B4BCFF72698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
 		5B4BCFF82698A7810000DC36 /* NYTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4BCFF52698A7810000DC36 /* NYTAPI.swift */; };
@@ -39,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B3E4C2B269C82DA0015F922 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5B3E4C33269CC0A70015F922 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5B4BCFF52698A7810000DC36 /* NYTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTAPI.swift; sourceTree = "<group>"; };
 		5BC218252698A4C3002F8AA8 /* HealthCode2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthCode2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC218282698A4C3002F8AA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,8 +121,10 @@
 				5BC218282698A4C3002F8AA8 /* AppDelegate.swift */,
 				5BC2182A2698A4C3002F8AA8 /* SceneDelegate.swift */,
 				5BC2182C2698A4C3002F8AA8 /* ViewController.swift */,
+				5B3E4C2B269C82DA0015F922 /* TableViewCell.swift */,
 				5B4BCFF52698A7810000DC36 /* NYTAPI.swift */,
 				5BC2182E2698A4C3002F8AA8 /* Main.storyboard */,
+				5B3E4C33269CC0A70015F922 /* DetailViewController.swift */,
 				5BC218312698A4C7002F8AA8 /* Assets.xcassets */,
 				5BC218332698A4C7002F8AA8 /* LaunchScreen.storyboard */,
 				5BC218362698A4C7002F8AA8 /* Info.plist */,
@@ -313,8 +323,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3E4C2C269C82DA0015F922 /* TableViewCell.swift in Sources */,
 				5B4BCFF62698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC2182D2698A4C3002F8AA8 /* ViewController.swift in Sources */,
+				5B3E4C34269CC0A70015F922 /* DetailViewController.swift in Sources */,
 				5BC218292698A4C3002F8AA8 /* AppDelegate.swift in Sources */,
 				5BC2182B2698A4C3002F8AA8 /* SceneDelegate.swift in Sources */,
 			);
@@ -324,8 +336,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3E4C2D269C82DA0015F922 /* TableViewCell.swift in Sources */,
 				5B4BCFF72698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC218402698A4C7002F8AA8 /* HealthCode2Tests.swift in Sources */,
+				5B3E4C35269CC0A70015F922 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B3E4C2E269C82DA0015F922 /* TableViewCell.swift in Sources */,
 				5B4BCFF82698A7810000DC36 /* NYTAPI.swift in Sources */,
 				5BC2184B2698A4C7002F8AA8 /* HealthCode2UITests.swift in Sources */,
+				5B3E4C36269CC0A70015F922 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
