@@ -15,6 +15,7 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
 
     let api = NYTAPI()
     var toc = [[String:Any]]()
+    var record = [String:Any]()
     
     @IBOutlet var tableView: UITableView!
     
@@ -42,16 +43,19 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let detailVC = DetailViewController()
-        detailVC.record = toc[indexPath.row]
-        
-        self.navigationController?.pushViewController(detailVC, animated: true)
-    
-       // performSegue(withIdentifier: "ToDetailSegue", sender: nil)
+
+        self.record = self.toc[indexPath.row]
+        self.performSegue(withIdentifier: "ToDetailSegue", sender: self)
         
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let detailVC = DetailViewController()
+        detailVC.record = self.record
+        
+    }
+    
     func tocUpdated(toc: [[String:Any]]){
         self.toc = toc;
         self.tableView.reloadData()

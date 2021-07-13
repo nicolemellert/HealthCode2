@@ -70,7 +70,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="WMZ-rf-Vwa"/>
                     <connections>
-                        <outlet property="labe" destination="dpW-Zw-moT" id="bnZ-dP-25Y"/>
                         <outlet property="label" destination="dpW-Zw-moT" id="xRM-2B-9xb"/>
                     </connections>
                 </viewController>
