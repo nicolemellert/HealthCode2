@@ -31,17 +31,16 @@ struct Data: Codable {
 }
 
 class NYTAPI {
+ 
+    var delegate:tocUpdatedDelegate?
     let endpoint = "https://api.nytimes.com/svc/topstories/v2/health.json?api-key=eAfQI3BIAUG1Cja4EZvUg2j7K2Vm2jFS"
-    
-    var dataSource : Any
-    
-    init() {
-         
-    }
+    var toc = [[String:Any]]()
     
     // get other endpoints from NYT
     
-    func getBase() {
+    func getBase(delegate:tocUpdatedDelegate) {
+        self.delegate = delegate
+        
         AF.request(endpoint).responseJSON { response in
             
             switch response.result {
@@ -53,11 +52,10 @@ class NYTAPI {
 
                         if let results = dictionary["results"] as? [[String:Any]]{
                             
-                            //Now we have array of dictionaries
-                            
                             print(results[0].keys)
                             
-                            self.dataSource = results
+                            self.toc = results
+                            self.delegate?.tocUpdated(toc: self.toc)
                         }
                     }
                     else{
