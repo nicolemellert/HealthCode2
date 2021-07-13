@@ -21,13 +21,4 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
-
-        // Configure YourCustomCell using the outlets that you've defined.
-
-        return cell
-    }
-
 }

@@ -35,7 +35,6 @@ class NYTAPI {
     
     // get other endpoints from NYT
     
-    
     func getBase() {
         AF.request(endpoint).responseJSON { response in
             

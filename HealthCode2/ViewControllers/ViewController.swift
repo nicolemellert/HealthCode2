@@ -9,6 +9,13 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var index:Any
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder) has not been implemented")
+    }
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -17,12 +24,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         // Do any additional setup after loading the view.
 
-        
         let api = NYTAPI()
         api.getBase()
-        
-  //      api.
-        
+
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -31,22 +39,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
         return cell
     }
+   
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+
+        // Configure YourCustomCell using the outlets that you've defined.
+
+        return cell
     }
     
-     func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
-       
-        // Get the index path from the cell that was tapped
-        let indexPath = tableView.indexPathForSelectedRow
-        // Get the Row of the Index Path and set as index
-        let index = indexPath?.row
-        // Get in touch with the DetailViewController
-        let detailViewController = segue.destination as! DetailViewController
-        // Pass on the data to the Detail ViewController by setting it's indexPathRow value
-        detailViewController.index = index
-    }
     
 }
+
 
