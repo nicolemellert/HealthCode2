@@ -12,6 +12,8 @@ protocol tocUpdatedDelegate {
 }
 
 class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSource, UITableViewDelegate {
+    
+    //COMMENT FOR TEST
 
     let api = NYTAPI()
     var toc = [[String:Any]]()
