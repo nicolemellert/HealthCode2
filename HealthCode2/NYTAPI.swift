@@ -33,6 +33,12 @@ struct Data: Codable {
 class NYTAPI {
     let endpoint = "https://api.nytimes.com/svc/topstories/v2/health.json?api-key=eAfQI3BIAUG1Cja4EZvUg2j7K2Vm2jFS"
     
+    var dataSource : Any
+    
+    init() {
+         
+    }
+    
     // get other endpoints from NYT
     
     func getBase() {
@@ -46,17 +52,12 @@ class NYTAPI {
                         print(dictionary["copyright"] as! String)
 
                         if let results = dictionary["results"] as? [[String:Any]]{
-                            // self.myData = results
+                            
                             //Now we have array of dictionaries
-                            // accessing array index 0 and dictionary key "short_url"
-                            // upwrapping Optional with !
-                            // var temp = (results[0]["short_url"]!)
-                        
+                            
                             print(results[0].keys)
-                         //   print()
-                            //print(results[0].values)
-                          //  print()
-                           // var title = results[0]["title"]!
+                            
+                            self.dataSource = results
                         }
                     }
                     else{

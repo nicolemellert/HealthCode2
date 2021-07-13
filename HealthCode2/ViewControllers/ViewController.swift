@@ -9,12 +9,17 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    let api = NYTAPI()
+
     var index:Any
     
     
     required init?(coder: NSCoder) {
         fatalError("init(coder) has not been implemented")
+        
+        
     }
+
     
     @IBOutlet var tableView: UITableView!
     
@@ -24,10 +29,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         // Do any additional setup after loading the view.
 
-        let api = NYTAPI()
         api.getBase()
-
-    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -48,6 +50,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
         return cell
     }
+        
+        
     
     
 }
