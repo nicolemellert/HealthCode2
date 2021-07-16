@@ -53,9 +53,12 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let detailVC = DetailViewController()
-        detailVC.record = self.record
-        
+        if segue.identifier == "ToDetailSegue" {
+            if let controller = segue.destination as? DetailViewController {
+                    controller.myArticle =  self.record
+                }
+            }
+
     }
     
     func tocUpdated(toc: [[String:Any]]){
