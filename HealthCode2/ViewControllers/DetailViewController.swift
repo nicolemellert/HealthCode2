@@ -10,22 +10,14 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var articleTitle: UILabel!
-    
-    var index: Int!
-    var record:[String:Any]?
+
+    var myArticle = [String:Any?]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let myTitle = record?["title"] as? String{
-            articleTitle.text = myTitle
-        }
-        
+        self.articleTitle.text = self.myArticle["title"] as? String
     }
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
- */
 }
