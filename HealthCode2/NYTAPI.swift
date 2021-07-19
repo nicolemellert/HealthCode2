@@ -48,7 +48,7 @@ class NYTAPI {
 
                         if let results = dictionary["results"] as? [[String:Any]]{
                             
-                            print(results[0].keys)
+                            //print(results[0]["multimedia"]!)
                             
                             self.toc = results
                             delegate.tocUpdated(toc: self.toc)

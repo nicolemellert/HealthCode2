@@ -69,10 +69,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B11-kg-LPz">
-                                <rect key="frame" x="80" y="272" width="188" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4ZZ-l0-vm2">
                                 <rect key="frame" x="20" y="337" width="240" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -87,6 +83,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B11-kg-LPz">
+                                <rect key="frame" x="32" y="232" width="188" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D1x-FI-NqT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,6 +115,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="WMZ-rf-Vwa"/>
                     <connections>
+                        <outlet property="ImagePreview" destination="B11-kg-LPz" id="38J-wf-YZt"/>
                         <outlet property="abstract" destination="obd-Ts-J4s" id="a8P-sz-yqC"/>
                         <outlet property="articleTitle" destination="y3R-vf-UQr" id="bAn-0u-pXb"/>
                         <outlet property="authorByLine" destination="J3p-jw-3uE" id="T9m-ik-sqS"/>
