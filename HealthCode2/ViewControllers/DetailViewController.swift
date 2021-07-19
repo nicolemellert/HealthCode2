@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class DetailViewController: UIViewController {
     
@@ -31,5 +32,8 @@ class DetailViewController: UIViewController {
             // Always adopt a light interface style.
             overrideUserInterfaceStyle = .light
         }
+        
+       
+
     }
 }
