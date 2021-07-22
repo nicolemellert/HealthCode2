@@ -23,6 +23,9 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+   //     let imageURl = ""
+
+        
         self.articleTitle.text = self.myArticle["title"] as? String
         self.authorByLine.text = self.myArticle["byline"] as? String
         self.abstract.text = self.myArticle["abstract"] as? String
@@ -33,7 +36,22 @@ class DetailViewController: UIViewController {
             overrideUserInterfaceStyle = .light
         }
         
-       
-
     }
 }
+
+
+
+
+//extension UIImageView {
+//    func load(url: URL) {
+//        DispatchQueue.global().async { [weak self] in
+//            if let data = try? Data(from: url as! Decoder) as? Foundation.Data {
+//                if let image = UIImage(data: data){
+//                    DispatchQueue.main.async {
+//                        self?.image = image
+//                    }
+//                }
+//            }
+//        }
+//    }
+//}
