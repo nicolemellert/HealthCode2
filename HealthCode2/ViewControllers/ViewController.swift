@@ -13,8 +13,6 @@ protocol tocUpdatedDelegate {
 
 class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSource, UITableViewDelegate {
     
-    //COMMENT FOR TEST
-
     let api = NYTAPI()
     var toc = [[String:Any]]()
     var record = [String:Any]()
@@ -25,10 +23,8 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-            // overrideUserInterfaceStyle is available with iOS 13
+    
             if #available(iOS 13.0, *) {
-                // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
 
@@ -41,10 +37,8 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        
-       // cell.textLabel?.text = api.toc[indexPath.row]["title"]as? String
        
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         cell.textLabel?.text = self.toc[indexPath.row]["title"] as? String
 
         return cell
@@ -64,7 +58,8 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
                     controller.myArticle =  self.record
                 }
             }
-
+        
+        
     }
     
     func tocUpdated(toc: [[String:Any]]){
