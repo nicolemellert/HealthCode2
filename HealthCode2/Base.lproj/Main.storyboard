@@ -61,29 +61,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3p-jw-3uE">
-                                <rect key="frame" x="5" y="253" width="404" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3p-jw-3uE">
+                                <rect key="frame" x="5" y="223" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Ts-J4s">
-                                <rect key="frame" x="5" y="282" width="404" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Ts-J4s">
+                                <rect key="frame" x="5" y="249" width="41.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B11-kg-LPz">
-                                <rect key="frame" x="5" y="93" width="188" height="70"/>
+                                <rect key="frame" x="5" y="93" width="41.5" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="1gS-6R-Q81"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="4yK-Jm-i5Q"/>
                                     <constraint firstAttribute="width" constant="188" id="7pA-By-lTn"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="HVR-ya-2XJ"/>
                                     <constraint firstAttribute="height" constant="70" id="jse-i0-HM7"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="188" id="yiy-F7-eaR"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-vf-UQr">
-                                <rect key="frame" x="5" y="224" width="188" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3R-vf-UQr">
+                                <rect key="frame" x="5" y="168" width="41.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qzk-97-QZu"/>
+                                    <constraint firstAttribute="width" constant="50" id="uLh-3N-Hp7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -92,48 +98,21 @@
                         <viewLayoutGuide key="safeArea" id="D1x-FI-NqT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="5Xr-wK-zYf"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="8WK-yu-suZ"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="A7T-kZ-Aoa"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="Aec-SI-m1C"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="Azf-F8-brf"/>
-                            <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="Cmf-Jl-NkX"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" id="DTc-Gm-XbZ"/>
-                            <constraint firstItem="B11-kg-LPz" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="EDL-vh-9A2"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="HjV-8n-64j"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="B11-kg-LPz" secondAttribute="trailing" constant="5" id="HmC-bK-XNg"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="IM0-MV-vGh"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="Nt1-pr-5mh"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="OhV-Ei-sU2"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="OwB-ih-BNh"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="Pi3-sD-CR6"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="Ppq-aO-5uj"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="Rar-hP-aU0"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="Rot-7z-FGB"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="TMj-Em-pdc"/>
-                            <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="Uqk-bk-vMW"/>
-                            <constraint firstItem="B11-kg-LPz" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="Vls-n0-J9b"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="5" id="X1t-Qr-ymg"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="B11-kg-LPz" secondAttribute="trailing" constant="5" id="Xpm-A4-6lB"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="50" id="Y10-IC-DDc"/>
-                            <constraint firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="Y49-v6-NFC"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="YCV-6T-1t2"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="ZGF-9c-lrE"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="50" id="bFo-Hc-3ib"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="ciR-ma-n9Q"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="dGG-cu-yz2"/>
-                            <constraint firstItem="B11-kg-LPz" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="dWP-0x-zQi"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="e5G-nd-DVa"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="eJW-fG-2UL"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="efo-6C-UhV"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="fJr-v9-rll"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="gif-Rd-SKt"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="hX9-UB-a4k"/>
-                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="jfe-j2-sf1"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="5" id="rpl-5x-ri5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="10" id="vfK-Ja-sjv"/>
-                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="xg0-64-peS"/>
-                            <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="zcO-Yc-WUu"/>
+                            <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="0Ri-AD-7QC"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="B11-kg-LPz" secondAttribute="trailing" constant="5" id="1Rk-jj-auu"/>
+                            <constraint firstItem="B11-kg-LPz" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="4wh-e4-r9C"/>
+                            <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="5" id="4yx-Qq-Nne"/>
+                            <constraint firstItem="B11-kg-LPz" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="5Pk-yx-CwP"/>
+                            <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="8Ww-Cp-iZ7"/>
+                            <constraint firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="Eju-Zg-OmW"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="HiY-RO-mkV"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="MEj-IR-6vI"/>
+                            <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="OiM-HE-LaD"/>
+                            <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="YZH-Ex-Pwj"/>
+                            <constraint firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="equ-7z-zhP"/>
+                            <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="lkd-ov-laO"/>
+                            <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="nbw-eZ-eZk"/>
+                            <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="yTe-0V-dGh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WMZ-rf-Vwa"/>
