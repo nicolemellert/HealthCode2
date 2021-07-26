@@ -26,8 +26,11 @@ class DetailViewController: UIViewController {
         self.articleTitle.text = self.myArticle["title"] as? String
         self.authorByLine.text = self.myArticle["byline"] as? String
         self.abstract.text = self.myArticle["abstract"] as? String
+        let multimediaArray = myArticle["multimedia"] as! [[String:Any]]
+        let photo = multimediaArray[0]["url"]!
 
-        self.imagePreview.populateUIImageViewWithImageFromURL(urlString: "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/is_my_cat_normal_slideshow/getty_rm_photo_of_cat_staring_close_up.jpg")
+
+        self.imagePreview.populateUIImageViewWithImageFromURL(urlString: photo as! String)
         
         
         // overrideUserInterfaceStyle is available with iOS 13
