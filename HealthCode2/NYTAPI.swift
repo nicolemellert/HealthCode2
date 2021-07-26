@@ -48,13 +48,6 @@ class NYTAPI {
 
                         if let results = dictionary["results"] as? [[String:Any]]{
                             
-                            
-                         //   var temp = results[1]["multimedia"]!
-                            let multimediaArray = results[1]["multimedia"] as! [[String:Any]]
-                            print("*_*_")
-                            print(multimediaArray[0]["url"]!)
-                            print("--------------")
-                        
                             self.toc = results
                             delegate.tocUpdated(toc: self.toc)
                         }
