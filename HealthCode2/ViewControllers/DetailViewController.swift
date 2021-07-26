@@ -24,8 +24,13 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.articleTitle.text = self.myArticle["title"] as? String
+        self.articleTitle.numberOfLines = 3
+        
+        
         self.authorByLine.text = self.myArticle["byline"] as? String
         self.abstract.text = self.myArticle["abstract"] as? String
+        self.abstract.numberOfLines = 10
+        
         let multimediaArray = myArticle["multimedia"] as! [[String:Any]]
         let photo = multimediaArray[0]["url"]!
 
