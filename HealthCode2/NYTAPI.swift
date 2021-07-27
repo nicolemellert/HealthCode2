@@ -47,7 +47,8 @@ class NYTAPI {
                         print(dictionary["copyright"] as! String)
 
                         if let results = dictionary["results"] as? [[String:Any]]{
-                            
+                        
+                            print(results[0])
                             
                           // multimedia contains the same image url just at different sizes
                           //  print(results[0]["multimedia"])

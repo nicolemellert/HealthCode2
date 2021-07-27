@@ -68,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Ts-J4s">
-                                <rect key="frame" x="5" y="368" width="404" height="21"/>
+                                <rect key="frame" x="5" y="285" width="404" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,6 +94,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyj-CH-VGd">
+                                <rect key="frame" x="5" y="252" width="404" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="D1x-FI-NqT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,14 +109,19 @@
                             <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="2lR-TN-um4"/>
                             <constraint firstItem="B11-kg-LPz" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="4wh-e4-r9C"/>
                             <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="5" id="4yx-Qq-Nne"/>
+                            <constraint firstItem="Cyj-CH-VGd" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="5GZ-1g-9GW"/>
                             <constraint firstItem="B11-kg-LPz" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="5Pk-yx-CwP"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="8Ww-Cp-iZ7"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="HiY-RO-mkV"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="Lpb-k7-NFa"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="MEj-IR-6vI"/>
+                            <constraint firstItem="Cyj-CH-VGd" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="NWb-bi-zfr"/>
                             <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="OiM-HE-LaD"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="YZH-Ex-Pwj"/>
-                            <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="lkd-ov-laO"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="Cyj-CH-VGd" secondAttribute="trailing" constant="5" id="Ysq-HW-iYz"/>
+                            <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="f5Z-o8-qED"/>
+                            <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="Cyj-CH-VGd" secondAttribute="bottom" constant="5" id="hTf-e9-97X"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="i4v-Nb-HR3"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="nbw-eZ-eZk"/>
                             <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="yTe-0V-dGh"/>
                         </constraints>
@@ -121,6 +132,7 @@
                         <outlet property="abstract" destination="obd-Ts-J4s" id="a8P-sz-yqC"/>
                         <outlet property="articleTitle" destination="y3R-vf-UQr" id="bAn-0u-pXb"/>
                         <outlet property="authorByLine" destination="J3p-jw-3uE" id="T9m-ik-sqS"/>
+                        <outlet property="createdDate" destination="Cyj-CH-VGd" id="8H9-f8-W0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ya9-wT-LTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
