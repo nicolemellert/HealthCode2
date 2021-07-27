@@ -48,6 +48,10 @@ class NYTAPI {
 
                         if let results = dictionary["results"] as? [[String:Any]]{
                             
+                            
+                          // multimedia contains the same image url just at different sizes
+                          //  print(results[0]["multimedia"])
+                            
                             self.toc = results
                             delegate.tocUpdated(toc: self.toc)
                         }

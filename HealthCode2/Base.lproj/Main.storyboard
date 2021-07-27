@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New York TImes - Health-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HealthCode2" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="96G-1F-CzP"/>
+                    <navigationItem key="navigationItem" title="New York TImes - Health" id="96G-1F-CzP"/>
                     <connections>
                         <outlet property="tableView" destination="jyP-XJ-9Ml" id="RKt-qW-Hg3"/>
                     </connections>
@@ -67,8 +67,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Ts-J4s">
-                                <rect key="frame" x="5" y="249" width="404" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obd-Ts-J4s">
+                                <rect key="frame" x="5" y="368" width="404" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -100,16 +100,16 @@
                         <constraints>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="0Ri-AD-7QC"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="B11-kg-LPz" secondAttribute="trailing" constant="5" id="1Rk-jj-auu"/>
+                            <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="2lR-TN-um4"/>
                             <constraint firstItem="B11-kg-LPz" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="4wh-e4-r9C"/>
                             <constraint firstItem="y3R-vf-UQr" firstAttribute="top" secondItem="B11-kg-LPz" secondAttribute="bottom" constant="5" id="4yx-Qq-Nne"/>
                             <constraint firstItem="B11-kg-LPz" firstAttribute="top" secondItem="D1x-FI-NqT" secondAttribute="top" constant="5" id="5Pk-yx-CwP"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="top" secondItem="y3R-vf-UQr" secondAttribute="bottom" constant="5" id="8Ww-Cp-iZ7"/>
-                            <constraint firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="Eju-Zg-OmW"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="HiY-RO-mkV"/>
+                            <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="obd-Ts-J4s" secondAttribute="trailing" constant="5" id="Lpb-k7-NFa"/>
                             <constraint firstItem="D1x-FI-NqT" firstAttribute="trailing" secondItem="y3R-vf-UQr" secondAttribute="trailing" constant="5" id="MEj-IR-6vI"/>
                             <constraint firstItem="obd-Ts-J4s" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="OiM-HE-LaD"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="YZH-Ex-Pwj"/>
-                            <constraint firstAttribute="trailing" secondItem="J3p-jw-3uE" secondAttribute="trailing" constant="5" id="equ-7z-zhP"/>
                             <constraint firstItem="obd-Ts-J4s" firstAttribute="top" secondItem="J3p-jw-3uE" secondAttribute="bottom" constant="5" id="lkd-ov-laO"/>
                             <constraint firstItem="J3p-jw-3uE" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="nbw-eZ-eZk"/>
                             <constraint firstItem="y3R-vf-UQr" firstAttribute="leading" secondItem="D1x-FI-NqT" secondAttribute="leading" constant="5" id="yTe-0V-dGh"/>

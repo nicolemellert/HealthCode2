@@ -7,8 +7,9 @@
 
 import UIKit
 import SwiftUI
+import WebKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, WKUIDelegate {
     
     @IBOutlet weak var articleTitle: UILabel!
 
@@ -19,27 +20,27 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var imagePreview: UIImageView!
     
     var myArticle = [String:Any?]()
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.articleTitle.text = self.myArticle["title"] as? String
         self.articleTitle.numberOfLines = 3
         self.articleTitle.font = self.articleTitle.font.withSize(20)
-        
+        self.articleTitle.textAlignment = NSTextAlignment.center
         
         self.authorByLine.text = self.myArticle["byline"] as? String
         self.authorByLine.font =  self.authorByLine.font.withSize(14)
+        self.authorByLine.textAlignment = NSTextAlignment.center
         
         self.abstract.text = self.myArticle["abstract"] as? String
         self.abstract.numberOfLines = 10
     
         
         let multimediaArray = myArticle["multimedia"] as! [[String:Any]]
-        let photoUrl = multimediaArray[0]["url"]!
 
-
-        self.imagePreview.populateUIImageViewWithImageFromURL(urlString: photoUrl as! String)
+        self.imagePreview.populateUIImageViewWithImageFromURL(urlString: multimediaArray[0]["url"]! as! String)
         
         
         // overrideUserInterfaceStyle is available with iOS 13
