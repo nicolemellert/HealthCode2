@@ -51,6 +51,7 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
         
     }
 
+    // adds segue to DetailViewController when tableview cell is clicked
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ToDetailSegue" {

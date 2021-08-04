@@ -35,6 +35,7 @@ class NYTAPI {
     var toc = [[String:Any]]()
 
     func getBase(delegate:tocUpdatedDelegate) {
+        // key from NYT API
         let endpoint = "https://api.nytimes.com/svc/topstories/v2/health.json?api-key=eAfQI3BIAUG1Cja4EZvUg2j7K2Vm2jFS"
        
         AF.request(endpoint).responseJSON { response in
@@ -47,9 +48,7 @@ class NYTAPI {
                         print(dictionary["copyright"] as! String)
 
                         if let results = dictionary["results"] as? [[String:Any]]{
-                        
-                            print(results[0])
-                            
+
                           // multimedia contains the same image url just at different sizes
                           //  print(results[0]["multimedia"])
                             
