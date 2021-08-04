@@ -35,6 +35,7 @@ class NYTAPI {
     var toc = [[String:Any]]()
 
     func getBase(delegate:tocUpdatedDelegate) {
+        
         // key from NYT API
         let endpoint = "https://api.nytimes.com/svc/topstories/v2/health.json?api-key=eAfQI3BIAUG1Cja4EZvUg2j7K2Vm2jFS"
        

@@ -24,7 +24,9 @@ class ViewController: UIViewController, tocUpdatedDelegate, UITableViewDataSourc
         self.tableView.delegate = self
         self.tableView.dataSource = self
     
+            // overrides dark mode for iOS 13 and on
             if #available(iOS 13.0, *) {
+                // Always adopt a light interface style.
                 overrideUserInterfaceStyle = .light
             }
 
